@@ -1,0 +1,64 @@
+/* Image hover effect */
+.navbar-brand img {
+ animation: scaleAnimation 0.8s infinite alternate; /* Alternate the animation direction */
+}
+
+@keyframes scaleAnimation {
+ from {
+   transform: scale(1); /* Start with normal size */
+ }
+ to {
+   transform: scale(1.1); /* Scale up to 110% */
+ }
+}
+
+/* H3 tag hover effect */
+.navbar-brand h3:hover {
+ color: #FF8000; /* Change the color on hover as needed */
+}
+
+/* Your CSS file */
+
+/* Define styles for the container */
+.div-img-container {
+ background-color: #c5c6c7;
+ border: 1px solid rgb(127, 120, 120);
+ border-radius: 15px;
+ display: inline-block;
+ overflow: hidden; /* Hide overflowing content for rounded corners */
+ transition: transform 0.1s ease-in-out; /* Add transition for a smooth effect */
+}
+
+/* Define styles for the image inside the container */
+.div-img-container img {
+ border-radius: 15px;
+ display: block;
+ transition: transform 0.1s ease-in-out; /* Add transition for a smooth effect */
+}
+
+/* Add hover effect to scale the image slightly */
+.div-img-container:hover img {
+ transform: scale(1.1);
+ border: 1px solid white;
+ transition: transform 0.1s ease-in-out; 
+}
+@keyframes blinkAnimation {
+ /* 0% {
+   opacity: 0.88;
+ }
+ 50% {
+   opacity:0.88;
+ }
+ 100% {
+   opacity: 1;
+ } */
+ 0% {
+  box-shadow: 2px 2px 0.3cm rgb(255, 12, 227);
+}
+50% {
+  box-shadow: 2px 2px 0.3cm rgb(250, 249, 246); /* Change the shadow color here */
+} 
+100% {
+  box-shadow: 2px 2px 0.3cm rgb(30, 197, 216);
+}
+}

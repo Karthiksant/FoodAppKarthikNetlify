@@ -1,0 +1,11 @@
+.btn.btn-primary {
+ margin-top: 15px;
+ border-radius: 15px;
+ background-color: #2bd022; /* Normal state color */
+ transition: background-color 0.3s ease;
+ box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn.btn-primary:hover {
+ background-color: orange; /* Hover state color */
+}
